@@ -1,0 +1,49 @@
+
+#header{
+	background: linear-gradient(to bottom, #000000 45% , #ffffff 80%);
+	font-size: 30px;
+}
+tble{
+	background: linear-gradient(to bottom, red,green);
+    color: #0a16b5bd;
+}
+tble tr{
+	color:#000000;
+}
+#footer{
+	background: #cccccc;
+}
+#developer{
+	width:15%;
+	height:35%;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+
+#developer img{
+	width: 100%;
+	  vertical-align: middle;
+/* 	transform:          rotate(-90deg); */
+/* 	-ms-transform:      rotate(-90deg); */
+/* 	-moz-transform:     rotate(-90deg); */
+/* 	-webkit-transform:  rotate(-90deg); */
+/* 	-o-transform:       rotate(-90deg); */
+}
+
+
+
+#myProgress {
+    width: 20%;
+    margin: 0 auto;
+    color: #1c1c1e;
+    font-size: 16px;
+}
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white; 
+}

@@ -1,0 +1,31 @@
+body{
+	width: 90%;
+	padding: 0%;
+	margin: 0%;
+}
+.mainContainer {
+	width: 100%;
+	font-size: x-large;
+	border: 2px solid black;
+	display: block;
+	padding: 2% 5% 2% 5%;
+	display: inline-flex;
+}
+
+#mobile {
+	width: 45%; color : red;
+	border: 2px solid red;
+
+}
+
+#divider {
+	border: 2px solid black;
+	float: left;
+	width: 10%;
+}
+
+#dth {
+	width: 45%;
+	color: blue;
+	border: 2px solid blue;
+}

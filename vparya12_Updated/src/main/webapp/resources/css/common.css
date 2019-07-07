@@ -1,0 +1,245 @@
+#header p : hover{
+	cursor: pointer;
+}
+
+/* Form css */
+#commonForm {
+	width: 510px;
+	margin-left: 440px;
+	padding: 0px 0px 7px 0px; 
+	background : #ccccaa;
+	display: block;
+	opacity: 1;
+	margin-top: 12%;
+	border-radius: 10px;
+	background: #ccccaa;
+	border-left:12px solid #6c7ae080;
+	border-right: 12px solid #6c7ae080; 
+}
+#borderDiv{
+	font-size: xx-large;
+	background: #6c7ae080;
+	text-align: center;
+	font-family: initial;
+}
+
+/* Div Id css*/
+#loginOverlay{
+	position: fixed; /* Sit on top of the page content */
+	display: block; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(144, 144, 146, 0.74);
+	/* Black background with opacity */
+	z-index: 12;
+	/* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+}
+
+#signupOverlay{
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(144, 144, 146, 0.74);
+	/* Black background with opacity */
+	z-index: 12;
+	/* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+}
+
+#newOverlay{
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(144, 144, 146, 0.74);
+	/* Black background with opacity */
+	z-index: 12;
+	/* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+}
+
+#editOverlay{
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(144, 144, 146, 0.74);
+	/* Black background with opacity */
+	z-index: 12;
+	/* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+}
+
+#companyName{
+	border: 1px solid blue;
+	width: 20%;	
+}
+
+#loggedUser{
+	margin-top: 3.8%;
+	padding-right:1%;
+}
+
+#container{
+	margin-top:4.5%;
+	padding: 1%;
+}
+
+#mainContainer{
+	width:100%;
+}
+
+/* Div Class css*/
+.success{
+	width: fit-content;
+	width: -moz-fit-content;
+    color: #089c29f0;
+    margin: 0 auto;
+}
+
+.error{
+	color: red;
+}
+
+.overlayForm {
+	opacity: 1;
+	color: #000000;
+	font-size: 20px;
+}
+
+/* Class css */
+.readOnly{
+	background : #ccccaa;	
+}
+
+.dataBox{
+	min-width:80%; 
+	max-width: 100%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.requiredastrick {
+	color: red;
+	padding-left: 3px;
+    font-size: 15px;
+}
+
+/* Tag css */
+hr{
+	margin-top: 0px !important;
+	margin-bottom: 10px !important;
+	border-top: 5px solid #bac839e6 !important;
+}
+
+h3{
+	margin-top: 5px !important;
+}
+
+input[type='text'], input[type='password'], input[type='email'] {
+    background-position: 145px 5px;
+    background-repeat: no-repeat;
+    width: 65%;
+    height: 25px;
+}
+
+input[type='radio']{
+	margin-left: 25px;
+}
+
+select{
+	width: 65%; height: 25px;
+	background-repeat: no-repeat;
+	background-position: 125px 4px;
+}
+
+.editColumn{
+	border: none !important;
+}
+
+.imgMobileButton{
+	border-radius: 15px; 
+	transform:          rotate(-90deg);
+	-ms-transform:      rotate(-90deg);
+	-moz-transform:     rotate(-90deg);
+	-webkit-transform:  rotate(-90deg);
+	-o-transform:       rotate(-90deg);
+}
+
+.imgMobileButton:hover{
+	opacity: 0.5 !important;
+	cursor: pointer;
+}
+
+.imgDthButton{
+	border-radius: 45px; 
+}
+
+.imgDthButton:hover{
+	opacity: 0.5 !important;
+	cursor: pointer;
+}
+
+.imgNewButton{
+	border-radius: 15px; 
+}
+
+.imgNewButton:hover{
+	opacity: 0.5 !important;
+	cursor: pointer;
+}
+
+.labelClass{
+	display: grid;
+    text-align: end;
+    width: 50%;
+    padding-right:20px;
+    float: left;
+}
+
+.labelClass label{
+	margin-top: 2.1px;
+}
+
+.inputClass{
+	display: inline-block;
+    text-align: left;
+    width: 50%;
+    padding-left: 2px;
+}
+
+.inputClass input{
+	margin-top: 3px;
+	margin-bottom: 2px;
+}
+
+.buttonClass{
+	padding-top: 2px;
+	display: inline-flex;
+    width: 100%;
+    margin-left: 33%;
+}
+
+.buttonClass input{
+	padding: 5px ;
+	margin: 5px 0px 0px 5px;
+	
+}

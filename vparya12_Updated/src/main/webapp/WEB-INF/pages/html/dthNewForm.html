@@ -1,0 +1,48 @@
+<form>
+<div class="error"></div>
+<div class="labelClass">
+	<label>DTH Number<span class="requiredastrick">*</span> :</label>
+	<label>Mobile Number<span class="requiredastrick">*</span> :</label>
+	<label>Network<span class="requiredastrick">*</span> :</label>
+	<label>User Name<span class="requiredastrick">*</span> :</label>
+	<label>Alternative Number :</label>
+	<label>Pack Amount<span class="requiredastrick">*</span> :</label>
+	<label>Validity<span class="requiredastrick">*</span> :</label>
+	<label>Balance<span class="requiredastrick">*</span> :</label>
+</div>
+<div class="inputClass">
+	<input type="text" id="dthNumber" onkeyup="validateDthNumber('dthNumber',this)"/>
+	<input type="text" id="mobileNumber" onkeyup="validateMobileNumber('mobileNumber',this)"/>
+	<select id="network">
+		<option value="Aircel">Aircel</option>
+		<option value="Airtel" selected="selected">Airtel</option>
+		<option value="BSNL">BSNL</option>
+		<option value="Idea">Idea</option>
+		<option value="Jio">Jio</option>
+		<option value="MTNL">MTNL</option>
+		<option value="MTS">MTS</option>
+		<option value="Reliance">Reliance</option>
+		<option value="Tata Docomo">Tata Docomo</option>
+		<option value="Telenor">Telenor</option>
+		<option value="Vodafone">Vodafone</option>
+	</select>
+	<input type="text" id="userName"  onkeyup="validateUserName('userName',this)"/>
+	<input type="text" id="altNumber" onkeyup="validateAltNumber('altNumber',this)" />
+	<input type="text" id="amount"  onkeyup="validateAmount('amount',this)" />
+	<input type="text" id="validity"  onkeyup="validateValidity('validity',this)"/>
+	<div style="display:flex;">
+		<input type="text" id="balance" readonly="readonly" style="width:30%; background : #ccccaa;"/>
+		<input type="text" id="paidBalance"  placeholder="Paid Amount" onkeyup="validateAmount('paidBalance',this)" style="width:35%;"/>
+	</div>
+<!-- 	<div style="display:inline-flex;"> -->
+<!-- 		<input type="radio" name="payment" value="true"/>Yes -->
+<!-- 		<input type="radio" name="payment" checked="checked" value="false" />No -->
+<!-- 	</div> -->
+	<input type="hidden" name="_csrfToken"	value="${_csrf.token}" />
+</div>
+<div class="buttonClass">
+	<input type="button" value="Save" class="btn-primary" style="background: #1f930899" onclick="saveNewDth();">
+	<input type="reset" value="Clear" class="btn-primary">
+	<input type="button" value="Close" class="btn-primary" style="background: #f9350b"  onclick="closeOpenForm('dthForm','newOverlay',this);">
+</div>
+</form>

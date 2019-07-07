@@ -1,0 +1,50 @@
+<form>
+<div class="error"></div>
+<div class="labelClass">
+<label>Customer Id<span class="requiredastrick">*</span> :</label>
+<label>User Name<span class="requiredastrick">*</span> :</label>
+<label>DTH Number<span class="requiredastrick">*</span> :</label>
+<label>Mobile Number<span class="requiredastrick">*</span> :</label>
+<label>Network<span class="requiredastrick">*</span> :</label>
+<!-- <label>Alt Number :</label> -->
+<label>Pack Amount<span class="requiredastrick">*</span> :</label>
+<label>Validity<span class="requiredastrick">*</span> :</label>
+<label>Balance<span class="requiredastrick">*</span> :</label>
+</div>
+<div class="inputClass">
+	<input type="text" id="editId" readonly="readonly" class="readOnly" />
+	<input type="text" id="editUserName"  readonly="readonly" class="readOnly"/>
+	<input type="text" id="editDthNumber" readonly="readonly" class="readOnly"/>
+	<input type="text" id="editMobileNumber" readonly="readonly" class="readOnly" />
+	<select id="editNetwork">
+		<option value="Aircel">Aircel</option>
+		<option value="Airtel" selected="selected">Airtel</option>
+		<option value="BSNL">BSNL</option>
+		<option value="Idea">Idea</option>
+		<option value="Jio">Jio</option>
+		<option value="MTNL">MTNL</option>
+		<option value="MTS">MTS</option>
+		<option value="Reliance">Reliance</option>
+		<option value="Tata Docomo">Tata Docomo</option>
+		<option value="Telenor">Telenor</option>
+		<option value="Vodafone">Vodafone</option>
+	</select>
+<!-- 	<input type="text" id="editAltNumber" readonly="readonly" /> -->
+	<input type="text" id="editAmount"  onkeyup="validateAmount('editAmount',this)" />
+	<input type="text" id="editValidity"  onkeyup="validateValidity('editValidity',this)"/>
+	<div style="display:flex;">
+		<input type="text" id="editBalance" readonly="readonly" style="width:30%; background : #ccccaa;"/>
+		<input type="text" id="editPaidBalance"  placeholder="Paid Amount" style="width:35%;"/>
+	</div>
+<!-- 	<div style="display:inline-flex;"> -->
+<!-- 		<input type="radio" name="editPayment" id="radioYes" value="true"/>Yes -->
+<!-- 		<input type="radio" id="radioNo" name="editPayment" checked="checked" value="false" />No -->
+<!-- 	</div> -->
+	<input type="hidden" name="_csrfToken"	value="${_csrf.token}" />	
+</div>
+<div class="buttonClass">
+	<input type="button" value="Update" class="btn-primary" style="background: #1f930899" onclick="updateDth();">
+	<input type="reset" value="Clear" class="btn-primary">
+	<input type="button" value="Close" class="btn-primary" style="background: #f9350b" onclick="closeOpenForm('dthEditForm','editOverlay',this);">
+</div>
+</form>

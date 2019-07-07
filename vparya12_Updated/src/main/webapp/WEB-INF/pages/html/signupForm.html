@@ -1,0 +1,28 @@
+<form>
+<div class="error"></div>
+<div class="labelClass">
+<label>Name<span class="requiredastrick">*</span> :</label>
+<label>Mobile Number<span class="requiredastrick">*</span> :</label>
+<label>Email Id<span class="requiredastrick">*</span> :</label>
+<label>Password<span class="requiredastrick">*</span> :</label>
+<!-- <label>Confirm Password<span class="requiredastrick">*</span> :</label> -->
+<label>Gender<span class="requiredastrick">*</span> :</label>
+</div>
+<div class="inputClass">
+	<input type="text" id="signupUserName" onkeyup="validateUserName('signupUserName',this)"/>
+	<input type="text" id="signupMobileNumber" onkeyup="validateMobileNumber('signupMobileNumber',this)"/>
+	<input type="email" id="signupEmailId"  onkeyup="checkEmailId('signupEmailId',this)"/>
+	<input type="password" id="signupPassword" onkeyup="checkPassword('signupPassword',this)" />
+<!-- 	<input type="password" id="signupConfirmPassword"  onkeyup="checkConfirmPassword('signupConfirmPassword',this)"/> -->
+	<div style="display:inline-flex;">
+		<input type="radio" name="gender" value="Female" style="margin-left: 0%;"/>Female
+		<input type="radio" name="gender" checked="checked" value="Male" style="margin-left: 0%;"/>Male
+	</div>
+	<input type="hidden" name="_csrfToken"	value="${_csrf.token}" />
+</div>
+<div class="buttonClass">
+	<input type="button" value="Signup" class="btn-primary" style="background: #1f930899" onclick="signupUser();">
+	<input type="reset" value="Clear" class="btn-primary">
+	<input type="button" value="Close" class="btn-primary" style="background: #f9350b" onclick="closeOpenForm('signupForm','signupOverlay',this);">
+</div>
+</form>
