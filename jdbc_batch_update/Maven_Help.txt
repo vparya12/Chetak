@@ -1,0 +1,35 @@
+Since oracle ojdbc7/8 or any ojdbcx.jar files need oracle licence, so you must need to download jar from oracle site and then install it in you project.
+Step 1:
+	Download ojdbc7/8 from oracle site.
+	Save that jar at location let say(path : G:/Oracle/ojdbc7.jar)
+Step 2:
+	Make sure you have installed Maven in your machine
+	if not then	
+		Step 1(a):
+			>Download maven binary file for you respective machine from "https://maven.apache.org/download.cgi"
+			>UnZip it in program files, let say (C:/programFiles/apache/maven/bin) is the folder structure after unzip
+			>Under System environment path variable
+				..Set/create User path with M2_HOME and set path as "C:/programFiles/apache/maven"
+				..Make sure you also have JAVA_HOME and path should be of running JDK (not JRE)
+				..let say if you have jdk8 path as (c:/programFiles/java/jdk8/bin)
+				..then JAVA_HOME path should be "c:/programFiles/java/jdk8"
+				..Finally
+				..Add in System path variable "C:/programFiles/apache/maven/bin"
+				..Save and close that window.
+				
+Step 3:
+	open Command prompt
+	check maven version with below commad
+	>mvn --version
+	Now install downloaded file ojdbc into you project
+	let say you project path is "G:/myProject"
+	Use below mvn commad to install
+	Goto your project path
+	G:/myProject>
+	>mvn install:install-file -Dfile=<path-to-file> -DgroupId=<group-id> \
+        -DartifactId=<artifact-id> -Dversion=<version> -Dpackaging=<packaging>
+	i.e >mvn install:install-file -Dfile=G:/Oracle/ojdbc7.jar -DgroupId=com.oracle \
+        -DartifactId=ojdbc7 -Dversion=2.2.0.1 -Dpackaging=jar
+		
+It will build your jar successfully.
+Enjoy
